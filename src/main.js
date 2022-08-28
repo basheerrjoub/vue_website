@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import CardWrapper from './components/CardWrapper.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.component('card-wrapper', CardWrapper);
+
+app.mount('#app')
+
